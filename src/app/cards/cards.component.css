@@ -1,0 +1,26 @@
+.card {
+  width: 20%;
+  margin-right: 2%;
+  margin-left: 2%;
+  background-color: #fff;
+  display: inline-block;
+  box-shadow: 2px 4px 2px grey;
+  border-radius: 5px 5px 5px 5px;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.card:hover{
+  box-shadow: 4px 6px 3px grey;
+}
+
+.card-header{
+    background-color: #3a7bd5;
+    width: 100%;
+}
+
+.card-header, p {
+    padding: 10px 5px;
+    text-decoration: black;
+}

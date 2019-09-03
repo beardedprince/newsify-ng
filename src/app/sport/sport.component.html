@@ -1,0 +1,18 @@
+
+<div class="posts" >
+    <div class="card" *ngFor ="let post of posts.articles" >
+            <div class="card-header"  >
+                    <p>{{post.title}}</p>
+                  </div>
+                  <div class="card-content" >
+                       <div class="card-image"> 
+                               <img [src] ="post.urlToImage">
+                        </div>
+                    <p>{{post.content}}</p>
+                    
+                    <button (click)= "readMore()"> <a routerLink="/sport/:id">Read More</a> <i class="fa fa-facebook"></i>
+                </button>
+            </div>
+    </div>
+    
+</div>
