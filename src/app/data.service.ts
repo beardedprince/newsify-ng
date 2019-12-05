@@ -9,6 +9,9 @@ export class DataService {
 
   constructor( private http: HttpClient) { }
 
+
+  posts: any[];
+
    getUsers() {
     return this.http.get('https://reqres.in/api/users');
   }
@@ -17,13 +20,22 @@ export class DataService {
     return this.http.get('https://newsapi.org/v2/top-headlines?country=ng&category=sport&apiKey=06008e50d7cf47e68f9c9d084b9ed5e0');
   }
 
-
-  firstClick() {
-    return console.log('works');
+  getHealthPosts() {
+    return this.http.get('https://newsapi.org/v2/top-headlines?country=ng&category=health&apiKey=06008e50d7cf47e68f9c9d084b9ed5e0');
   }
 
-  myMethod() {
-    return console.log('education button is clicked');
+  getPostByTitle(title: string) {
+    this.getPosts().subscribe(data => {
+      this.posts = data['articles'];
+    });
+    return this.posts.find(post => post.title === title);
+  }
+
+  getHealthPostByTitle(title: string) {
+    this.getHealthPosts().subscribe(data => {
+      this.posts = data['articles'];
+    });
+    return this.posts.find(post => post.title === title);
   }
 
   submitForm() {

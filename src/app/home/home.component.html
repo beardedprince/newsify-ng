@@ -4,9 +4,14 @@
 
 <h1>Users</h1>
 
-<ul *ngIf="users">
-  <li *ngFor="let user of users.data">
-    <img [src]="user.avatar">
-    <p>{{ user.first_name }} {{ user.last_name }}</p>
-  </li>
-</ul>
+
+<div class="row" *ngIf="users">
+  <div class="col-lg-4  col-md-4 col-sm-2 col-xs-1" *ngFor="let user of users.data"> 
+      <img [src]="user.avatar">
+
+    <h1>  {{ user.first_name }}</h1>
+    <p>{{ user.last_name }}</p>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,44 +1,34 @@
 
-.posts{
-    display: grid;
-    grid-template-columns: repeat(4, 300px);
-    margin-left: 2%;
-    grid-gap: 30px;  
-    margin-top: 20px;
-    
-}
 
-.card{
-    margin-bottom:3%;
+.card1{
+    
     box-shadow: 4px 6px 3px grey;
     background: #fff;
     border-radius: 0px 0px 5px 5px;
     overflow: hidden;
-}
+    margin-top: 15px;
+    margin-bottom: 25px;
+    
+    
+} 
 
   
   .card-header{
       background-color: #3a7bd5;
-      width: 100%;
+      
   }
   
-  .card-header, p {
+  /* .card-header, p {
       padding: 10px 5px;
       text-decoration: black;
-  }
+  } */
 
-  .card-content {
+  .card-content p {
     padding: 10px 5px;
     margin-bottom: 10px;
-}
+} 
 
-.card-content button{
-    background: #f4f4f4;
-    border: none;
-    color: black;
-    margin-left: 10px;
-}
-  
+
 .card-image{
     width: 100%;
 }
@@ -48,3 +38,11 @@
     height: 180px;
 }
 
+.btn{
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+.btn a{
+   text-decoration: none;
+}
