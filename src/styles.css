@@ -1,18 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    padding:0;
-    margin:0;
-    box-sizing:border-box
-}
+@import '~bootstrap/dist/css/bootstrap.min.css';
 
-button{
-    padding: 12px 20px;
-    background: purple;
-    color: white;
-   
-}
+
+
+
 
 body{
-    background: #f4f4f4;
+    background:gainsboro;
 }
+
 

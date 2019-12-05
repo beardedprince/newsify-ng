@@ -9,14 +9,10 @@ header{
     float: right;
 }
 
-.menu, a:hover{
-    border-bottom: 2px solid #f08b18;
-    margin-top: 3px;
-    }
 
 a{ 	padding: 0px 23px;
 	text-decoration : none;
 	font-family: 'Inconsolata', monospace;
     transition: border-bottom .10s;
     
-}
+} 

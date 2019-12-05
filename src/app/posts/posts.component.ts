@@ -1,5 +1,7 @@
+import { DataService } from './../data.service';
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ActivatedRoute } from '@angular/router';
+
 
 
 
@@ -10,9 +12,28 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PostsComponent implements OnInit {
 
-  constructor(http: HttpClient) { }
+  post: any;
+
+  constructor(private route: ActivatedRoute, private dataService: DataService) { }
 
   ngOnInit() {
+    const idRef = 'title';
+    const title = this.route.snapshot.params[idRef];
+    this.post = this.dataService.getPostByTitle(title);
+    this.route.params.subscribe(params => {
+      this.post = this.dataService.getPostByTitle(params[idRef]);
+    });
+
+    console.log(this.post);
+
+
+    const id = 'title';
+    const tile = this.route.snapshot.params[id];
+    this.post = this.dataService.getHealthPostByTitle(tile);
+    this.route.params.subscribe(params => {
+      this.post = this.dataService.getHealthPostByTitle(params[id]);
+    });
+
   }
 
 }

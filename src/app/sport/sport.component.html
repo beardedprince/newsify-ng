@@ -1,18 +1,30 @@
 
-<div class="posts" >
-    <div class="card" *ngFor ="let post of posts.articles" >
-            <div class="card-header"  >
-                    <p>{{post.title}}</p>
-                  </div>
-                  <div class="card-content" >
-                       <div class="card-image"> 
-                               <img [src] ="post.urlToImage">
+<div class="container-fluid">
+
+        <div class=" row" >
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" *ngFor ="let post of posts.articles" >
+                        <div class="card1">
+                                        <div class="card-header"  >
+                                                        <p>{{post.title}}</p>
+                                                      </div>
+                                                      <div class="card-content" >
+                                                           <div class="card-image"> 
+                                                                   <img [src] ="post.urlToImage">
+                                                            </div>
+                                                        <p>{{post.description}}</p>
+                                                        
+                                                        <button type="button" class="btn btn-outline-info" (click)= "readMore()"> <a [routerLink]="['/sport', post.title]">Read More</a> 
+                                                    </button>
+                                                </div>
                         </div>
-                    <p>{{post.content}}</p>
-                    
-                    <button (click)= "readMore()"> <a routerLink="/sport/:id">Read More</a> <i class="fa fa-facebook"></i>
-                </button>
+                </div>
+
+
+               
+                
             </div>
-    </div>
-    
+
+            
 </div>
+
+<app-footer></app-footer>

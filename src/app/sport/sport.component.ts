@@ -19,8 +19,4 @@ export class SportComponent implements OnInit {
     });
   }
 
-  // readMore() {
-  //   this.data.readMore();
-  // }
-
 }

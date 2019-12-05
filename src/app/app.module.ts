@@ -14,6 +14,7 @@ import { HealthComponent } from './health/health.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     HealthComponent,
     AboutComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

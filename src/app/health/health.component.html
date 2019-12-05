@@ -1,3 +1,30 @@
-<p>
-  health works!
-</p>
+
+<div class="container-fluid">
+
+                <div class=" row" >
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12" *ngFor ="let post of posts.articles" >
+                                <div class="card1">
+                                                <div class="card-header"  >
+                                                                <p>{{post.title}}</p>
+                                                              </div>
+                                                              <div class="card-content" >
+                                                                   <div class="card-image"> 
+                                                                           <img [src] ="post.urlToImage">
+                                                                    </div>
+                                                                <p>{{post.description}}</p>
+                                                                
+                                                                <button type="button" class="btn btn-outline-info" (click)= "readMore()"> <a [routerLink]="['/health', post.title]">Read More</a> 
+                                                            </button>
+                                                        </div>
+                                </div>
+                        </div>
+        
+        
+                       
+                        
+                    </div>
+        
+                    
+        </div>
+        
+        <app-footer></app-footer>
