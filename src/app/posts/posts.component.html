@@ -1,19 +1,23 @@
 
 <div class="posts">
-  <h3 > {{post.title}} </h3>
+  
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-4 ">
         
-            <div class="post-image text-center"> <img [src]="post.urlToImage" alt="story image"> </div>
+            <div class="post-image text-center mt-4"> <img [src]="post.urlToImage" alt="story image"> </div>
     
     </div>
     <div class="col-md-6 col-md-offset-2 ">
         <div>
-            <p> {{post.content}} </p>
-            <span class="badge badge-danger "> Date Published: {{post.publishedAt | date:'medium'}} </span> 
-            <span class="badge badge-primary "> Post Author : {{post.author}} </span>
-            <span class="badge badge-primary"> <i class="fa fa-share-alt"> Share on Twitter</i> </span>
-            <span class="badge badge-info">  <i class="fa fa-eye"> Views</i></span>
+            <h3 class = "my-2 px-2"> {{post.title | uppercase}} </h3>
+            <p class = "py-2 px-2 border-left-danger text-justify"> {{post.content}} </p>
+          
+            <div class="mb-3 px-2">
+                <span class="badge badge-danger  "> Date Published: {{post.publishedAt | date:'medium'}} </span> 
+                <span class="badge badge-primary "> Post Author : {{post.author}} </span>
+                <span class="badge badge-primary "> <i class="fa fa-share-alt"> Share on Twitter</i> </span>
+                <span class="badge badge-info ">  <i class="fa fa-eye"> Views</i></span>
+            </div>
             
           </div>
     </div>

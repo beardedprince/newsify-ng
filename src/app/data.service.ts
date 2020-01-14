@@ -24,6 +24,10 @@ export class DataService {
     return this.http.get('https://newsapi.org/v2/top-headlines?country=ng&category=health&apiKey=06008e50d7cf47e68f9c9d084b9ed5e0');
   }
 
+  getEducation() {
+    return this.http.get('https://newsapi.org/v2/top-headlines?country=ng&category=entertainment&apiKey=06008e50d7cf47e68f9c9d084b9ed5e0');
+  }
+
   getPostByTitle(title: string) {
     this.getPosts().subscribe(data => {
       this.posts = data['articles'];

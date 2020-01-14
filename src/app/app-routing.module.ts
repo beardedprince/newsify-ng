@@ -8,9 +8,8 @@ import { HomeComponent } from './home/home.component';
 import { PostsComponent } from './posts/posts.component';
 
 const routes: Routes = [
-  {path: '', component: HomeComponent },
+  {path: '', component: HealthComponent },
   {path: 'sport', component: SportComponent },
-  {path: 'health', component: HealthComponent },
   {path: 'education', component: EducationComponent },
   {path: 'contact', component: ContactComponent },
   {path: 'sport/:title', component: PostsComponent},

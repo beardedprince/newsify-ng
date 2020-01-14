@@ -14,7 +14,7 @@ export class PostsComponent implements OnInit {
 
   post: any;
 
-  constructor(private route: ActivatedRoute, private dataService: DataService) { }
+  constructor( private route: ActivatedRoute, private dataService: DataService ) { }
 
   ngOnInit() {
     const idRef = 'title';
@@ -25,7 +25,6 @@ export class PostsComponent implements OnInit {
     });
 
     console.log(this.post);
-
 
     const id = 'title';
     const tile = this.route.snapshot.params[id];
