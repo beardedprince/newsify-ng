@@ -8,8 +8,14 @@ import { DataService } from '../data.service';
 })
 export class EducationComponent implements OnInit {
 
+  edupost: object;
   constructor(private data: DataService) { }
 
-  ngOnInit() {  }
+  ngOnInit() {
+    this.data.getEducation().subscribe(data => {
+      this.edupost = data;
+      console.log(this.edupost);
+    });
+    }
 
 }

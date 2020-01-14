@@ -1,21 +1,25 @@
 
-<nav class="navbar navbar-expand-md bg-dark navbar-dark">
-    <a routerLink = ''>Newsify</a>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark" role= "navigation">
+    <a routerLink = ''><i class="fa fas-running"></i>Newsify</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto ">
         <li class="nav-item">
-            <a class="nav-link" routerLink='/sport'> <i class="fa fa-running"></i> Sport</a>
+            <a class="nav-link" routerLink='/sport' routerLinkActive = "active current"> <i class="fas fas-running"></i> Sport</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" routerLink="/education"> <i class="fas fa-hospital" aria-hidden="true"></i> Education</a>
+            <a class="nav-link" routerLink="/education" routerLinkActive = "active current"> <i class="fas fas-hospital" aria-hidden="true"></i> Education</a>
         </li>
           
         <li class="nav-item">
-            <a class="nav-link" routerLink="/health"> <i class="fas fa-hospital" aria-hidden="true"></i> Health</a>
+            <a class="nav-link" routerLink="/health" routerLinkActive = "active current"> <i class="fas fas-hospital" aria-hidden="true"></i> Health</a>
         </li>  
       </ul>
     </div>  
   </nav>
+
+
+ 
+  

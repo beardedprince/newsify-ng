@@ -5,7 +5,7 @@
 <h1>Users</h1>
 
 
-<div class="row" *ngIf="users">
+<div class="row" *ngIf="users" data-aos="fade-down" >
   <div class="col-lg-4  col-md-4 col-sm-2 col-xs-1" *ngFor="let user of users.data"> 
       <img [src]="user.avatar">
 
@@ -13,5 +13,6 @@
     <p>{{ user.last_name }}</p>
   </div>
 </div>
+
 
 <app-footer></app-footer>

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-sport',
